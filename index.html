@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S Moonwara A Monisha — Researcher</title>
+  <meta name="description" content="Personal academic website of S Moonwara A Monisha — PhD Student and Researcher.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-name">S Moonwara A Monisha</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Left Column: Profile + Bio + News -->
+          <div class="profile-column">
+
+            <!-- Profile Box -->
+            <div class="content-box profile-card">
+            <img src="assets/images/profile.jpg" alt="Photo of S Moonwara A Monisha" class="profile-photo"
+                 onerror="this.style.background='var(--bg-surface)'; this.alt='Profile photo placeholder';">
+
+            <p class="profile-title">PhD Student</p>
+            <p class="profile-affiliation">Computing Education Researcher</p>
+            <p class="profile-affiliation">Virginia Tech</p>
+
+            <div class="social-links">
+              <!-- Google Scholar -->
+              <a href="https://scholar.google.com/citations?user=wnvwG50AAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/sheikh-moonwara-anjum-monisha-67510919b" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/SMAMonisha" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <!-- Medium -->
+              <a href="#" aria-label="Medium" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75S21.62 15.17 21.62 12s.53-5.75 1.19-5.75S24 8.83 24 12z"/></svg>
+              </a>
+              <!-- Twitter/X -->
+              <a href="#" aria-label="Twitter" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+
+            </div>
+
+            <!-- Bio Box -->
+            <div class="content-box sidebar-section">
+              <div class="section-label">About</div>
+              <p>
+                I am a PhD student at <a href="https://www.vt.edu/" target="_blank" rel="noopener">Virginia Tech</a> in the
+                <a href="https://cs.vt.edu/" target="_blank" rel="noopener">Department of Computer Science</a>,
+                advised by Professor <a href="https://hamiltonfour.tech/" target="_blank" rel="noopener">David H Smith</a>.
+                I am conducting research at the intersection of Computing Education Research (CER),
+                Human-Computer Interaction, and AI.
+                I completed my Bachelor of Science in Software Engineering at IUT.
+              </p>
+            </div>
+
+            <!-- News Box -->
+            <div class="content-box sidebar-section">
+              <div class="section-label">News</div>
+              <ul class="sidebar-news">
+                <li>
+                  <span class="news-date"></span>
+                  <span class="news-text"></span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Research Vision + Focus Areas -->
+          <div class="content-box research-info">
+            <h2>Research Vision</h2>
+            <p>
+              I design and evaluate interactive systems that support both novices and instructors in computing education. Working at the intersection of Computing Education Research (CER) and Human-Computer Interaction (HCI), I integrate AI to understand how students learn effectively and help instructors deliver timely, meaningful feedback at scale. My research focuses on introductory CS education, particularly diagramming in learning, database diagramming, which plays a central role in conceptual understanding.
+            </p>
+
+            <p style="margin-top: 1rem;">My research centers on these complementary threads:</p>
+
+            <!-- Research Focus Area Cards -->
+            <div class="focus-card">
+              <div class="focus-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"/></svg>
+              </div>
+              <div class="focus-content">
+                <h3>Scaffolding Novice Learning through Diagramming</h3>
+                <p>Scaffolding student learning through alternative media — particularly diagramming, which lets novices express computational thinking without the syntactic burden of code writing.</p>
+              </div>
+            </div>
+
+            <div class="focus-card">
+              <div class="focus-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <div class="focus-content">
+                <h3>Actionable and Effective Feedback at Scale</h3>
+                <p>Reducing instructor workload in assessing student deliverables, so that feedback remains rich even as class sizes grow. Currently focusing on AI-assisted learning and assessment in introductory CS courses, with an emphasis on databases and ER modeling.</p>
+              </div>
+            </div>
+
+            <p style="margin-top: 1.5rem;">
+              For more details, see my <a href="cv.html">CV</a> and <a href="research.html">research page</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Tree accent -->
+      <svg class="footer-tree" width="60" height="30" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="30,2 20,14 24,14 16,24 26,24 28,30 32,30 34,24 44,24 36,14 40,14" fill="currentColor"/>
+      </svg>
+      <p>S Moonwara A Monisha | 2026</p>
+      <p>Built with care. Powered by curiosity.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
