@@ -83,6 +83,10 @@
               <a href="#" aria-label="Twitter" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
+              <!-- Email -->
+              <a href="mailto:msheikhmoonwaraa@vt.edu" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
             </div>
 
             </div>
@@ -156,15 +160,24 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <!-- Tree accent -->
-      <svg class="footer-tree" width="60" height="30" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="30,2 20,14 24,14 16,24 26,24 28,30 32,30 34,24 44,24 36,14 40,14" fill="currentColor"/>
-      </svg>
-      <p>S Moonwara A Monisha | 2026</p>
-      <p>Built with care. Powered by curiosity.</p>
+<p>S Moonwara A Monisha | msheikhmoonwaraa@vt.edu</p>
     </div>
   </footer>
 
+  <!-- Stars (dark mode) -->
+  <div class="stars-container" id="stars-container"></div>
+
+  <!-- Nature Background -->
+  <div class="nature-bg">
+    <svg class="nature-mountains" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 60 L60 35 L120 45 L200 20 L280 40 L360 15 L440 38 L520 10 L600 30 L680 18 L760 42 L840 12 L920 35 L1000 22 L1080 40 L1160 8 L1240 32 L1320 25 L1400 38 L1440 20 L1440 60 Z"/>
+    </svg>
+    <svg class="nature-trees" viewBox="0 0 1440 35" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="80,35 88,12 96,35"/><polygon points="200,35 206,18 212,35"/><polygon points="350,35 358,10 366,35"/><polygon points="500,35 505,20 510,35"/><polygon points="650,35 658,8 666,35"/><polygon points="820,35 826,15 832,35"/><polygon points="950,35 957,12 964,35"/><polygon points="1100,35 1107,18 1114,35"/><polygon points="1250,35 1256,10 1262,35"/><polygon points="1380,35 1386,16 1392,35"/>
+    </svg>
+  </div>
+
   <script src="js/main.js"></script>
+  <script>(function(){var c=document.getElementById('stars-container');if(!c)return;for(var i=0;i<30;i++){var s=document.createElement('div');s.className='star';var size=1+Math.random()*2;s.style.width=size+'px';s.style.height=size+'px';s.style.left=(Math.random()*100)+'%';s.style.bottom=(Math.random()*100)+'%';s.style.animationDuration=(2+Math.random()*4)+'s';s.style.animationDelay=(Math.random()*5)+'s';c.appendChild(s);}})();</script>
 </body>
 </html>
