@@ -724,21 +724,21 @@ a:hover {
 /* Mountains */
 .nature-mountains {
   height: 60px;
-  opacity: 0.12;
 }
 
 .nature-mountains path {
   fill: var(--accent);
+  fill-opacity: 0.12;
 }
 
 /* Trees */
 .nature-trees {
   height: 35px;
-  opacity: 0.25;
 }
 
 .nature-trees polygon {
   fill: var(--accent);
+  fill-opacity: 0.25;
 }
 
 /* Rain */
