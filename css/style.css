@@ -664,10 +664,92 @@ a:hover {
 }
 
 .cv-section h2 {
-  font-size: 1.15rem;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+  font-size: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--accent);
-  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+/* CV entry cards */
+.cv-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-card:hover {
+  border-color: var(--accent-light);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.cv-logo {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.62rem;
+  color: #FFFFFF;
+}
+
+.cv-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-card-body h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.2rem;
+}
+
+.cv-role {
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.cv-desc {
+  font-size: 0.85rem;
+}
+
+.cv-date-badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  background-color: #7E868F;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+[data-theme="dark"] .cv-date-badge {
+  background-color: #4A5361;
+  color: #E8E6E1;
+}
+
+@media (max-width: 640px) {
+  .cv-card {
+    flex-wrap: wrap;
+  }
+  .cv-date-badge {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .cv-entry {
