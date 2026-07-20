@@ -531,6 +531,80 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+/* Teaching Page */
+.institution-heading {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--text-primary);
+  margin-bottom: 1.75rem;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.course-card {
+  margin-bottom: 0;
+}
+
+.course-card h3 {
+  margin-bottom: 0.15rem;
+}
+
+.course-code {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.tag-pill {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+.tag-graduate { background-color: #E9E2F7; color: #553C9A; }
+.tag-undergraduate { background-color: #DCEAF8; color: #2C5987; }
+.tag-ta { background-color: #DDF0E4; color: #2D5F3C; }
+.tag-instructor { background-color: #F6E3F0; color: #86277A; }
+.tag-project { background-color: #D9F0EF; color: #1F6363; }
+.tag-term { background-color: #E8EAEC; color: #4A5560; }
+
+[data-theme="dark"] .tag-graduate { background-color: #2E2547; color: #C4B0F0; }
+[data-theme="dark"] .tag-undergraduate { background-color: #1D3049; color: #9CC5EC; }
+[data-theme="dark"] .tag-ta { background-color: #1B3328; color: #8FD1A8; }
+[data-theme="dark"] .tag-instructor { background-color: #352032; color: #DFA3D6; }
+[data-theme="dark"] .tag-project { background-color: #16302F; color: #85CFCB; }
+[data-theme="dark"] .tag-term { background-color: #252C36; color: #A8B2BC; }
+
+.course-desc {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Publication List */
 .pub-list {
   list-style: none;
