@@ -247,6 +247,7 @@ a:hover {
   min-height: 180px;
   border-radius: 12px;
   object-fit: cover;
+  object-position: center 30%;
   border: 3px solid var(--border);
   box-shadow: 0 4px 12px var(--shadow);
   margin-bottom: 1.2rem;
