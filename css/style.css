@@ -2,10 +2,10 @@
 
 /* ===== CSS Custom Properties (Light Theme Default) ===== */
 :root {
-  --bg-primary: #EEEEF0;
+  --bg-primary: #EDEADE; /* Alabaster */
   --bg-surface: #FFFFFF;
   --bg-card: #FFFFFF;
-  --text-primary: #1A1A1A;
+  --text-primary: #262626;
   --text-secondary: #4A4A4A;
   --accent: #2D5F3C;
   --accent-hover: #1E4429;
