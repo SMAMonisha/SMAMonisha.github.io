@@ -2,7 +2,7 @@
 
 /* ===== CSS Custom Properties (Light Theme Default) ===== */
 :root {
-  --bg-primary: #EDEADE; /* Alabaster */
+  --bg-primary: #EEEEF0;
   --bg-surface: #FFFFFF;
   --bg-card: #FFFFFF;
   --text-primary: #262626;
